@@ -2,7 +2,7 @@
 function ministudio_theme_customizer( $wp_customize ) {
 	/*About Section*/
     $wp_customize->add_section( 'ministudio_about_section' , array(
-		'title'       => __( 'About Section', 'ministudio' ),
+		'title'       => __( 'Wie zijn we', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change about options here.', 'ministudio'),
 	) );
@@ -28,7 +28,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 
 	/*Services Section*/
     $wp_customize->add_section( 'ministudio_services_section' , array(
-		'title'       => __( 'Services Section', 'ministudio' ),
+		'title'       => __( 'Wat doen we', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change Services options here.', 'ministudio'),
 	) );
@@ -54,7 +54,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 
 	/*Portfolio Section*/
     $wp_customize->add_section( 'ministudio_portfolio_section' , array(
-		'title'       => __( 'Portfolio Section', 'ministudio' ),
+		'title'       => __( 'Waarom doen we dit', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change Portfolio options here.', 'ministudio'),
 	) );
@@ -65,7 +65,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 	  'type' => 'checkbox',
 	  'section' => 'ministudio_portfolio_section',
 	) );
-	$wp_customize->add_setting( 'ministudio_portfolio_title' , array ( 'default' => 'Waarom doen we dit?','sanitize_callback' => 'esc_html'));
+	$wp_customize->add_setting( 'ministudio_portfolio_title' , array ( 'default' => 'Waarom doen we dit','sanitize_callback' => 'esc_html'));
 	$wp_customize->add_control( 'ministudio_portfolio_title', array(
 	  'label' => __( 'Title', 'ministudio' ),
 	  'type' => 'text',
@@ -80,7 +80,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 
 	/*Pricing Section*/
     $wp_customize->add_section( 'ministudio_pricing_section' , array(
-		'title'       => __( 'Pricing Section', 'ministudio' ),
+		'title'       => __( 'Winkel', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change Pricing options here.', 'ministudio'),
 	) );
@@ -210,7 +210,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 
 	/*Blog Section*/
 	$wp_customize->add_section( 'ministudio_blog_section' , array(
-		'title'       => __( 'Blog Section', 'ministudio' ),
+		'title'       => __( 'Waar spelen we', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change blog options here.', 'ministudio'),
 	) );
@@ -221,7 +221,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 	  'type' => 'checkbox',
 	  'section' => 'ministudio_blog_section',
 	) );
-	$wp_customize->add_setting( 'ministudio_blog_title' , array ( 'default' => 'Waar','sanitize_callback' => 'esc_html'));
+	$wp_customize->add_setting( 'ministudio_blog_title' , array ( 'default' => 'Waar spelen we','sanitize_callback' => 'esc_html'));
 	$wp_customize->add_control( 'ministudio_blog_title', array(
 	  'label' => __( 'Title', 'ministudio' ),
 	  'type' => 'text',
@@ -236,7 +236,7 @@ function ministudio_theme_customizer( $wp_customize ) {
 
 	/*Contact Section*/
 	$wp_customize->add_section( 'ministudio_contact_section' , array(
-		'title'       => __( 'Contact Section', 'ministudio' ),
+		'title'       => __( 'Contact', 'ministudio' ),
 		'priority'    => 200,
 		'description' => __('Change Contact options here.', 'ministudio'),
 	) );

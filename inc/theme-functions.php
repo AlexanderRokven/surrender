@@ -39,7 +39,7 @@ $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 									<?php if($front_portfolio_active){?><li><a href="#recent_work" class="js-target-scroll"><?php _e( 'Wat', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_pricing_active){?><li><a href="#pricing_table" class="js-target-scroll"><?php _e( 'Waarom', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_blog_active){?><li><a href="#latest_news" class="js-target-scroll"><?php _e( 'Waar', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_product_active){?><li><a href="#ltest_product" class="js-target-scroll"><?php _e( 'Winkels', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_product_active){?><li><a href="#latest_product" class="js-target-scroll"><?php _e( 'Winkels', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_contact_active){?><li><a href="#get_touch" class="js-target-scroll"><?php _e( 'Contact', 'ministudio' ); ?></a></li><?php } ?>
 								</ul>
 							</div>
