@@ -6,7 +6,7 @@ $custom_logo_button = get_theme_mod('custom_logo-button',get_template_directory_
 $front_services_active = get_theme_mod('ministudio_services_active','1');
 $front_portfolio_active = get_theme_mod('ministudio_portfolio_active','1');
 $front_pricing_active = get_theme_mod('ministudio_pricing_active','1');
-$front_product_active = get_theme_mod('ministudio_shop_active','1');
+$front_product_active = get_theme_mod('ministudio_pricing_desc_active','1');
 $front_blog_active = get_theme_mod('ministudio_blog_active','1');
 $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 ?>
@@ -35,11 +35,11 @@ $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 							<div id="navbar" class="navbar-collapse collapse">
 								<ul class="nav navbar-nav">
 									<li class="active"><a href="#home" class="js-target-scroll"><?php _e( 'Home', 'ministudio' ); ?></a></li>
-									<?php if($front_services_active){?><li><a href="#what_we_do" class="js-target-scroll"><?php _e( 'Wie', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_portfolio_active){?><li><a href="#recent_work" class="js-target-scroll"><?php _e( 'Wat', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_pricing_active){?><li><a href="#pricing_table" class="js-target-scroll"><?php _e( 'Waarom', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_services_active){?><li><a href="#wie_zijn_we" class="js-target-scroll"><?php _e( 'Wie', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_portfolio_active){?><li><a href="#wat_doen_we" class="js-target-scroll"><?php _e( 'Wat', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_pricing_active){?><li><a href="#waarom_doen_we_dit" class="js-target-scroll"><?php _e( 'Waarom', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_blog_active){?><li><a href="#latest_news" class="js-target-scroll"><?php _e( 'Waar', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_product_active){?><li><a href="#latest_product" class="js-target-scroll"><?php _e( 'Winkels', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_product_active){?><li><a href="#winkel" class="js-target-scroll"><?php _e( 'Winkels', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_contact_active){?><li><a href="#get_touch" class="js-target-scroll"><?php _e( 'Contact', 'ministudio' ); ?></a></li><?php } ?>
 								</ul>
 							</div>
@@ -61,7 +61,7 @@ $custom_logo_button = get_theme_mod('custom_logo-button',get_template_directory_
 $front_services_active = get_theme_mod('ministudio_services_active','1');
 $front_portfolio_active = get_theme_mod('ministudio_portfolio_active','1');
 $front_pricing_active = get_theme_mod('ministudio_pricing_active','1');
-$front_product_active = get_theme_mod('ministudio_shop_active','1');
+$front_product_active = get_theme_mod('ministudio_pricing_active','1');
 $front_blog_active = get_theme_mod('ministudio_blog_active','1');
 $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 ?>
@@ -124,14 +124,14 @@ function ministudio_fun_slider()
 }
 ?>
 <?php
-function ministudio_fun_who_we_are()
+function ministudio_fun_wie_zijn_we()
 {
 $front_about_us_active = get_theme_mod('ministudio_about_active','1');
-$front_about_us_title = get_theme_mod('ministudio_about_title','Who we are');
+$front_about_us_title = get_theme_mod('ministudio_about_title','Wie zijn we');
 $front_about_us_description = get_theme_mod('ministudio_about_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_about_us_active):
 ?>
-<section id="who_we_are" class="secondary-bg">
+<section id="wie_zijn_we" class="secondary-bg">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
@@ -156,14 +156,14 @@ endif;
 }
 ?>
 <?php
-function ministudio_fun_what_we_do()
+function ministudio_fun_wat_doen_we()
 {
 $front_services_active = get_theme_mod('ministudio_services_active','1');
-$front_services_title = get_theme_mod('ministudio_services_title','What we do');
+$front_services_title = get_theme_mod('ministudio_services_title','Wat doen we');
 $front_services_description = get_theme_mod('ministudio_services_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_services_active):
 ?>
-<section id="what_we_do" class="primary-bg" >
+<section id="wat_doen_we" class="primary-bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
@@ -189,14 +189,14 @@ endif;
 }
 ?>
 <?php
-function ministudio_fun_recent_work()
+function ministudio_fun_waarom_doen_we_dit()
 {
 $front_portfolio_active = get_theme_mod('ministudio_portfolio_active','1');
 $front_portfolio_title = get_theme_mod('ministudio_portfolio_title','Our Recent Works');
 $front_portfolio_description = get_theme_mod('ministudio_portfolio_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_portfolio_active):
 ?>
-<section id="recent_work" class="primary-bg" >
+<section id="waarom_doen_we_dit" class="primary-bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
@@ -240,14 +240,14 @@ endif;
 }
 ?>
 <?php
-function ministudio_fun_pricing_table()
+function ministudio_fun_winkel()
 {
 $front_pricing_active = get_theme_mod('ministudio_pricing_active');
 $front_pricing_title = get_theme_mod('ministudio_pricing_title','Pricing Table');
 $front_pricing_description = get_theme_mod('ministudio_pricing_desc');
 if($front_pricing_active):
 ?>
-<section id="pricing_table" class="secondary-bg" >
+<section id="winkel" class="secondary-bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
