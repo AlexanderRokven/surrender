@@ -1,4 +1,9 @@
 <?php
+//Include Files
+require get_stylesheet_directory() . '/inc/theme-functions.php';
+require get_template_directory() . '/inc/theme-options.php';
+?>
+<?php
 function my_theme_enqueue_styles() {
 
     $parent_style = 'parent-style'; // This is 'ministudio' for the surrender theme.
