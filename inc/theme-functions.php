@@ -39,7 +39,7 @@ $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 									<?php if($front_portfolio_active){?><li><a href="#wat_doen_we" class="js-target-scroll"><?php _e( 'Wat', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_pricing_active){?><li><a href="#waarom_doen_we_dit" class="js-target-scroll"><?php _e( 'Waarom', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_blog_active){?><li><a href="#latest_news" class="js-target-scroll"><?php _e( 'Waar', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_product_active){?><li><a href="#winkel" class="js-target-scroll"><?php _e( 'Winkels', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_product_active){?><li><a href="#winkel" class="js-target-scroll"><?php _e( 'Winkel', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_contact_active){?><li><a href="#get_touch" class="js-target-scroll"><?php _e( 'Contact', 'ministudio' ); ?></a></li><?php } ?>
 								</ul>
 							</div>
@@ -192,7 +192,7 @@ endif;
 function ministudio_fun_waarom_doen_we_dit()
 {
 $front_portfolio_active = get_theme_mod('ministudio_portfolio_active','1');
-$front_portfolio_title = get_theme_mod('ministudio_portfolio_title','Our Recent Works');
+$front_portfolio_title = get_theme_mod('ministudio_portfolio_title','Waarom doen we dit');
 $front_portfolio_description = get_theme_mod('ministudio_portfolio_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_portfolio_active):
 ?>
@@ -242,8 +242,8 @@ endif;
 <?php
 function ministudio_fun_winkel()
 {
-$front_pricing_active = get_theme_mod('ministudio_pricing_active');
-$front_pricing_title = get_theme_mod('ministudio_pricing_title','Pricing Table');
+$front_pricing_active = get_theme_mod('ministudio_pricing_active', '1');
+$front_pricing_title = get_theme_mod('ministudio_pricing_title','Winkel');
 $front_pricing_description = get_theme_mod('ministudio_pricing_desc');
 if($front_pricing_active):
 ?>
@@ -276,8 +276,8 @@ endif;
 <?php
 function ministudio_fun_latest_product()
 {
-$front_product_active = get_theme_mod('ministudio_shop_active','1');
-$front_product_title = get_theme_mod('ministudio_shop_title','Our Latest Product');
+$front_product_active = get_theme_mod('ministudio_shop_active');
+$front_product_title = get_theme_mod('ministudio_shop_title','WWWW');
 $front_product_description = get_theme_mod('ministudio_shop_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_product_active):
 ?>
@@ -369,7 +369,7 @@ endif;
 function ministudio_fun_latest_news()
 {
 $front_blog_active = get_theme_mod('ministudio_blog_active','1');
-$front_blog_title = get_theme_mod('ministudio_blog_title','Latest News');
+$front_blog_title = get_theme_mod('ministudio_blog_title','Waar spelen we?');
 $front_blog_desciption = get_theme_mod('ministudio_blog_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_blog_active):
 ?>
@@ -421,7 +421,7 @@ endif;
 <?php
 function ministudio_fun_get_touch()
 {
-$front_contact_title = get_theme_mod('ministudio_contact_title','Get in Touch');
+$front_contact_title = get_theme_mod('ministudio_contact_title','Contact');
 $front_contact_description = get_theme_mod('ministudio_contact_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 
 $ministudio_formshortcode = get_theme_mod('ministudio_formshortcode');
