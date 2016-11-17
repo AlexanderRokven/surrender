@@ -38,9 +38,9 @@ $front_contact_active = get_theme_mod('ministudio_contact_active','1');
 									<?php if($front_services_active){?><li><a href="#wie_zijn_we" class="js-target-scroll"><?php _e( 'Wie', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_portfolio_active){?><li><a href="#wat_doen_we" class="js-target-scroll"><?php _e( 'Wat', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_pricing_active){?><li><a href="#waarom_doen_we_dit" class="js-target-scroll"><?php _e( 'Waarom', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_blog_active){?><li><a href="#latest_news" class="js-target-scroll"><?php _e( 'Waar', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_blog_active){?><li><a href="#waar_spelen_we" class="js-target-scroll"><?php _e( 'Waar', 'ministudio' ); ?></a></li><?php } ?>
 									<?php if($front_product_active){?><li><a href="#winkel" class="js-target-scroll"><?php _e( 'Winkel', 'ministudio' ); ?></a></li><?php } ?>
-									<?php if($front_contact_active){?><li><a href="#get_touch" class="js-target-scroll"><?php _e( 'Contact', 'ministudio' ); ?></a></li><?php } ?>
+									<?php if($front_contact_active){?><li><a href="#contact" class="js-target-scroll"><?php _e( 'Contact', 'ministudio' ); ?></a></li><?php } ?>
 								</ul>
 							</div>
 						</nav>
@@ -366,14 +366,14 @@ endif;
 }
 ?>
 <?php
-function ministudio_fun_latest_news()
+function ministudio_fun_waar_spelen_we()
 {
 $front_blog_active = get_theme_mod('ministudio_blog_active','1');
 $front_blog_title = get_theme_mod('ministudio_blog_title','Waar spelen we?');
 $front_blog_desciption = get_theme_mod('ministudio_blog_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
 if($front_blog_active):
 ?>
-<section id="latest_news" class="primary-bg" >
+<section id="waar_spelen_we" class="primary-bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
@@ -419,7 +419,7 @@ endif;
 }
 ?>
 <?php
-function ministudio_fun_get_touch()
+function ministudio_fun_contact()
 {
 $front_contact_title = get_theme_mod('ministudio_contact_title','Contact');
 $front_contact_description = get_theme_mod('ministudio_contact_desc','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ');
@@ -430,7 +430,7 @@ $ministudio_email = get_theme_mod('ministudio_email','contact@site.com');
 $ministudio_telephone = get_theme_mod('ministudio_telephone','(555)6666');
 
 ?>
-<section id="get_touch" class="secondary-bg" >
+<section id="contact" class="secondary-bg" >
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">

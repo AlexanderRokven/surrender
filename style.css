@@ -5,9 +5,32 @@
  Author:       Steef van de Gruiter & Alexander Rokven
  Author URI:   https://www.alexanderrokven.nl
  Template:     ministudio
- Version:      1.0.0
+ Version:      1.1 (Hoger dan 1.0.0)
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  ministudio
 */
+
+/* Sections */
+#wat_doen_we {
+  background-image: url('./img/wat.jpg');
+  background-repeat: no-repeat;
+}
+
+#waarom_doen_we_dit {
+  /* Why you no style! */
+}
+
+#waar_spelen_we {
+  /* Why you no style! */
+}
+
+#winkel {
+  /* Why you no style! */
+}
+/*@media only screen and (max-width: 768px) {
+  [id*="waarom_doen_we_dit"] {
+    background-color:  black;
+  }
+}*/
