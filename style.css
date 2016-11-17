@@ -13,21 +13,30 @@
 */
 
 /* Sections */
+section {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 #wat_doen_we {
   background-image: url('./img/wat.jpg');
   background-repeat: no-repeat;
 }
 
 #waarom_doen_we_dit {
-  /* Why you no style! */
+  background-image: url('./img/waarom.jpg');
+  background-repeat: no-repeat;
 }
 
 #waar_spelen_we {
-  /* Why you no style! */
+  background-image: url('./img/waar.jpg');
+  background-repeat: no-repeat;
+  height: 60em;
 }
 
 #winkel {
-  /* Why you no style! */
+  background-image: url('./img/wat.jpg');
+  background-repeat: no-repeat;
 }
 /*@media only screen and (max-width: 768px) {
   [id*="waarom_doen_we_dit"] {
