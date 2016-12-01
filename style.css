@@ -20,27 +20,23 @@ section {
 }
 
 #wat_doen_we {
-  background-image: url('./img/wat.jpg');
-  background-repeat: no-repeat;
+  /* Wat CSS selector */
 }
 
 #waarom_doen_we_dit {
-  background-image: url('./img/waarom.jpg');
-  background-repeat: no-repeat;
+  /* Waarom_doen_we_dit CSS selector */
 }
 
 #waar_spelen_we {
-  background-image: url('./img/waar.jpg');
-  background-repeat: no-repeat;
-  height: 60em;
+  /* Waar CSS selector */
 }
 
 #winkel {
-  background-image: url('./img/wat.jpg');
-  background-repeat: no-repeat;
+  /* Winkel CSS selector */
 }
-/*@media only screen and (max-width: 768px) {
-  [id*="waarom_doen_we_dit"] {
-    background-color:  black;
-  }
-}*/
+/*@media only screen and (max-width: px)
+  {
+    [id*=""] {
+    CSS Selector
+    }
+  } */
